@@ -101,6 +101,18 @@ def aman():
     st.markdown(aman_4)
 
 def about_us():
+    #Aman Profile
+    p5,p6,p7,p8=st.columns(4)
+    with p5:
+        image = Image.open("profile4.png")
+        st.image(image, caption='CEO')   
+    
+    info3,info4=st.columns(2)
+    with info3:
+        st.subheader("Aman Paliwal")
+
+    aman()
+    
     #PRadnyesh Profile
     p1,p2,p3,p4=st.columns(4)
     with p1:
@@ -113,19 +125,6 @@ def about_us():
 
     pradnyesh()
     st.subheader("━━━━━━━━━━━━━━━━━━━━━━━━━")
-
-    #Aman Profile
-    p5,p6,p7,p8=st.columns(4)
-    with p5:
-        image = Image.open("profile4.png")
-        st.image(image, caption='CEO')   
-    
-    info3,info4=st.columns(2)
-    with info3:
-        st.subheader("Aman Paliwal")
-
-    aman()
-
 
 
 #process input and make predition
